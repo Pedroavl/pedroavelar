@@ -1,0 +1,51 @@
+body {
+    margin-right: auto; /* 1 */
+    margin-left:  auto; /* 1 */
+    background: @color-s;
+}
+
+html {
+    scroll-behavior: smooth;
+    background: @color-s;
+}
+
+html, body {
+    @media (max-width: 768px) {
+        overflow-x: hidden!important;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.pwp-emphasys {
+    color: @color-p;
+}
+
+.pwp-upper-title {
+    text-transform: uppercase;
+}
+
+.container-fluid {
+    padding-left: 100px!important;
+    padding-right: 100px!important;
+
+    @media (max-width: 768px) {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}
+

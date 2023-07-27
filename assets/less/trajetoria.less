@@ -1,0 +1,109 @@
+.pwp-trajetoria {
+    background: linear-gradient(100deg, #000000 66.78%, #02685C 79.56%, #02A490 91.46%, rgba(5, 218, 192, 0.72) 101.64%);
+    height: 578px;
+
+    @media (max-width: 768px) {
+        padding-left: 16px!important;
+        padding-right: 16px!important;
+        background: #000000!important;
+        height: 400px;
+    }
+    
+    .pwp-trajetoria__title  {
+        color: @color-1;
+        font-weight: 600;
+        padding-top: 100px;
+        padding-bottom: 160px;
+
+        @media (max-width: 768px) {
+            padding-top: 60px;
+            font-size: 2rem;
+        }
+    }
+
+    .pwp-trajetoria-labels__title {
+        color: @color-1;
+        font-weight: 600;
+        font-size: 18px;
+        margin-top: -31px;
+    }
+
+    p {
+        &.pwp-trajetoria__label {
+            color: #05DAC0!important;
+            font-family: 'Poppins', sans-serif;
+
+            @media (max-width: 768px) {
+                padding-top: 40px;
+            }
+        }
+    }
+
+    .pwp-trajetoria__image {
+        img {
+            margin-top: -104px;
+            margin-left: 175px;
+
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+    }
+
+    .loading-bar__wrapper label {
+        display: block;
+        font-size: 0.9rem;
+        font-style: italic;
+        font-weight: bold;
+        color: #00ffa4;
+    }
+    .loading-bar {
+        background: @color-p;
+        height: 3px;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .loading-bar-bullet::before {
+        content: "";
+        display: block;
+        background: @color-1;
+        height: 12px;
+        width: 12px;
+        border-radius: 100px;
+        z-index: 999;
+        border: 0.5px solid #5f5f5f56;
+        cursor: pointer;
+    }
+    .slick-next {
+        right: 0;
+        z-index: 1!important;
+        top: -50px;
+    }
+    .slick-prev {
+        left: 0;
+        z-index: 1!important;
+        top: -50px;
+    }
+    
+    .slick-current.loading-bar-bullet::before {
+        height: 12px;
+        width: 12px;
+        margin-left: -9px; /* Center bullet - Half .slick-current width*/
+        border: 2px solid white;
+        background-color: @color-p;
+    }
+    .labels {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .slick-next::before {
+        color: @color-p!important;
+    }
+
+    .slick-prev::before {
+        color: @color-p!important;
+    }
+}

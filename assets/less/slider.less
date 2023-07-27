@@ -1,0 +1,34 @@
+.slick-dots {
+    margin-top: 20px!important;
+    li {
+        button {
+            &::before {
+                font-size: 15px!important;
+                color: @color-p!important;
+            }
+        }
+    }
+}
+
+.slick-next::before, .slick-prev::before {
+    font-size: 35px;
+    color: #1C2827!important;
+}
+
+.slick-prev {
+    left: 260px;
+    z-index: 9;
+
+    @media (max-width: 768px) {
+        display: none!important;
+    }
+}
+
+.slick-next {
+    right: 260px;
+    z-index: 9;
+
+    @media (max-width: 768px) {
+        display: none!important;
+    }
+}

@@ -1,0 +1,73 @@
+.pwp-footer {
+    background-color: @color-s;
+    text-align: center;
+    padding-top: 100px;
+    font-family: 'Montserrat', sans-serif;
+    .pwp-footer-content {
+        img {
+            padding-bottom: 40px;
+        }
+        .pwp-footer-content__menu {
+            #menu-principal {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                gap: 20px;
+                justify-content: center;
+                padding-bottom: 40px;
+
+                @media (max-width: 768px) {
+                    flex-direction: column;
+                }
+
+                a {
+                    color: @color-1!important;
+                    transition: all .3s ease-in-out;
+
+                    &:hover {
+                        color: @color-p!important;
+                    }
+                }
+            }
+        }
+
+        .pwp-footer-content-social-media {
+            .pwp-footer-content-social-media__icons {
+                list-style: none!important;
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+                padding-bottom: 100px;
+                a {
+                    transition: all .3s ease-in-out;
+                    &:hover {
+                        color: @color-1!important;
+                    }
+
+                    svg {
+                        transition: all .3s ease-in-out;
+                        width: 30px;
+                        height: 30px;
+
+                        &:hover {
+                            fill: @color-1!important;
+                        }
+
+                        path {
+                            transition: all .3s ease-in-out;
+                            &:hover {
+                                fill: @color-1!important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .pwp-copy-footer {
+        .pwp-copy-footer {
+            color: @color-1!important;
+        }
+    }
+}

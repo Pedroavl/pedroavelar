@@ -1,0 +1,65 @@
+.pwp-site-header {
+    background: linear-gradient(0.2deg, @color-p -594.71%, @color-s 115.46%);
+    margin-top: -113px;
+
+
+    &__image {
+        padding-top: 100px;
+        margin-bottom: -12px;
+
+        @media (max-width: 768px) {
+            order: 2;
+            padding-top: 0px;
+            margin-bottom: -8px;
+        }
+
+        img {
+            @media (max-width: 768px) {
+                width: 397px;
+                height: 412px;
+            }
+        }
+    }
+
+    &__title {
+        font-weight: 700!important;
+        color: @color-1;
+        padding-bottom: 1rem;
+
+        @media (max-width: 768px) {
+            margin-top: 160px;
+            font-size: 1.5rem;
+            padding-left: 16px;
+        }
+    }
+
+    &__desc {
+        color: @color-1;
+        font-weight: 400!important;
+        padding-bottom: 1rem;
+
+        @media (max-width: 768px) {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
+
+    &__btn-cta {
+        color: @color-p;
+        font-weight: 700;
+        border: 1px solid @color-p;
+        background-color: transparent;
+        border-radius: 27px;
+        padding: 10px 25px ;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            background-color: @color-p;
+            color: @color-s;
+        }
+
+        @media (max-width: 768px) {
+            margin-left: 16px;
+        }
+    }
+}

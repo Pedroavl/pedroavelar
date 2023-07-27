@@ -1,0 +1,75 @@
+.pwp-portfolio {
+    background-color: @color-s;
+    padding-top: 60px;
+    padding-bottom: 150px;
+    position: relative;
+
+    @media (max-width: 768px) {
+        padding-bottom: 60px;
+        padding-left: 16px!important;
+        padding-right: 16px!important;
+    }
+
+    &__title {
+        color: @color-p;
+        font-weight: 700;
+        padding-bottom: 60px;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+        padding-bottom: 30px; 
+
+        img {
+            width: 379px !important;
+            height: 210px !important;
+
+            @media (max-width: 768px) {
+                padding-left: 11px!important;
+                padding-right: 25px!important;
+            }
+        }
+    }
+
+    .pwp-portfolio__inner {
+        .pwp-portfolio__overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: rgba(0, 0, 0, 0.571);
+
+            &:hover {
+                opacity: 1;
+            }
+
+            .pwp-portfolio__text {
+                color: @color-1;
+                font-size: 15px;
+                font-weight: 600;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;
+                transition: all .3s ease-in-out;
+
+                &:hover {
+                    color: @color-p;
+                }
+            }
+        }
+    }
+}
